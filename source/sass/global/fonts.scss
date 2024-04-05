@@ -1,0 +1,14 @@
+
+@include font-face("Roboto Condensed", url("../../fonts/Roboto-Condens/Roboto-Condensed-Light.woff2") format("woff2"), normal, 300);
+@include font-face("Roboto Condensed", url("../../fonts/Roboto-Condens/Roboto-Condensed-Regular.woff2") format("woff2"), normal, 400);
+@include font-face("Roboto Condensed", url("../../fonts/Roboto-Condens/Roboto-Condensed-Bold.woff2") format("woff2"), normal, 700);
+@include font-face("Alumni Sans", url("../../fonts/AlumniSans/AlumniSans-SemiBold.woff2") format("woff2"), normal, 600);
+@include font-face("Alumni Sans", url("../../fonts/AlumniSans/AlumniSans-ExtraBold.woff2") format("woff2"), normal, 700);
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../../fonts/Roboto-Condens/Roboto-Condensed-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}

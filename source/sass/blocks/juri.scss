@@ -1,0 +1,104 @@
+.juri {
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
+}
+
+.juri__inner {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.juri__title {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.juri__slider-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 227px;
+  z-index: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+  }
+}
+
+.juri__button-slider {
+  display: none;
+  position: absolute;
+  border-radius: 50%;
+  background-color: transparent;
+  width: 56px;
+  height: 56px;
+  z-index: 1;
+  top: 50%;
+  border: none;
+  color: #102654;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.juri__button-slider svg {
+  height: 32px;
+  width: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.juri__button-slider--prev {
+  transform: translateY(-50%) rotate(180deg);
+
+  @media (min-width: $desktop-width) {
+    left: -66px;
+  }
+}
+
+.juri__button-slider--next {
+  transform: translateY(-50%);
+  right: 0;
+
+  @media (min-width: $desktop-width) {
+    right: -66px;
+  }
+}
+
+.juri__button-slider:hover {
+  border: 1px solid #102654;
+}
+
+.juri__button-slider:focus-visible {
+  border: 1px solid #102654;
+  outline: none;
+  background-color: #e8e8e8;
+}
+
+.juri__button-slider:active {
+  border: 1px solid #102654;
+  background-color: #102654;
+  color: #ffffff;
+}

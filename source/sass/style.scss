@@ -2,3 +2,34 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/swiper";
+
+
+// Global
+// ---------------------------------
+
+@import "global/variables";
+@import "global/mixins";
+@import "global/fonts";
+@import "global/global";
+@import "global/container";
+@import "global/visually-hidden";
+@import "global/title";
+
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/hero";
+@import "blocks/about";
+@import "blocks/video";
+@import "blocks/price";
+@import "blocks/price-content";
+@import "blocks/games";
+@import "blocks/info-games";
+@import "blocks/juri";
+@import "blocks/slider-juri";
+@import "blocks/features";
+@import "blocks/offers";
+@import "blocks/faq";
+@import "blocks/accordeon-faq";

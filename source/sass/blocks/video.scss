@@ -1,0 +1,78 @@
+.video-media {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 410px;
+    bottom: 0;
+  }
+}
+
+.video-media__pictures {
+  height: 100%;
+  width: 100%;
+}
+
+.video-media__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 72px;
+  width: 72px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid rgba($color-red, 0.2);
+  padding: 0;
+  color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.video-media__play::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 52px;
+  width: 52px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: $play-gradborder;
+
+  @media (min-width: $desktop-width) {
+    height: 72px;
+    width: 72px;
+  }
+}
+
+.video-media__play::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  height: 15px;
+  width: 15px;
+  z-index: 2;
+  background-color: #ffffff;
+  mask-image: url("../../img/sprite/play.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  @media (min-width: $desktop-width) {
+    height: 17px;
+    width: 17px;
+  }
+}
